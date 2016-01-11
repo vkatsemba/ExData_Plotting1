@@ -1,3 +1,4 @@
+newdata <- read.csv("household_power_consumption.csv")
 ## As with the previous two plots, we convert date and time
 newdata$Datetime <- strptime(paste(newdata$Date, newdata$Time), "%d/%m/%Y %H:%M:%S")
 ## We partion our plotting system into a 2x2.
