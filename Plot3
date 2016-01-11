@@ -1,3 +1,4 @@
+newdata <- read.csv("household_power_consumption.csv")
 ##Just like plot 2, we perform conversions for date and time.
 newdata$Datetime <- strptime(paste(newdata$Date, newdata$Time), "%d/%m/%Y %H:%M:%S")
 ##For the plot we use a line graph for the first sub metering and a set of points for the second and third ones.
